@@ -7,7 +7,7 @@ function Productos() {
   useEffect(() => {
     const fetchProductos = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/productos");
+        const res = await fetch("https://backend-venta.vercel.app/api/productos");
         const data = await res.json();
 
         // ✅ Aseguramos que sea siempre un array

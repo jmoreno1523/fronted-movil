@@ -8,7 +8,7 @@ export default function ListaVentas() {
   useEffect(() => {
     const fetchVentas = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/ventas");
+        const res = await fetch("https://backend-venta.vercel.app/api/ventas");
         const data = await res.json();
         setVentas(data);
       } catch (err) {
